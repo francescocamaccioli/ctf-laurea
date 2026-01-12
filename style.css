@@ -1,0 +1,110 @@
+/* Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", monospace;
+  background-color: #0b0f14;
+  color: #d1d5db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 720px;
+  width: 95%;
+  box-shadow: 0 0 20px rgba(0, 255, 170, 0.15);
+}
+
+/* Titoli */
+h1 {
+  color: #00ffaa;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Testo */
+p {
+  line-height: 1.6;
+}
+
+/* Codice */
+pre {
+  background-color: #020617;
+  color: #00ffaa;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #020617;
+  border: 1px solid #1f2937;
+  color: #d1d5db;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+/* Bottone */
+button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #00ffaa;
+  color: #020617;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00e69a;
+}
+
+/* Messaggi */
+#result {
+  margin-top: 10px;
+  color: #f87171;
+  text-align: center;
+}
+
+/* Flag */
+.flag {
+  text-align: center;
+  color: #00ffaa;
+  font-size: 1.1em;
+}
+
+.final {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 1.1em;
+    padding: 14px;
+  }
+
+  pre {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>CTF Laurea</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container final">
+    <h1>🔐 CTF - the Bussi one</h1>
+
+    <p>
+      Benvenuto alla CTF dedicata alla Laurea Magistrale in Cybersecurity!
+    </p>
+
+    <p>
+      Una CTF (Capture The Flag) è una sfida in cui i partecipanti devono risolvere sfide di sicurezza informatica per trovare  "flag" nascoste. In questo caso la sfida è semplice(o almeno si spera).
+    </p>
+
+    <p>
+      <strong>Decifra la frase qui sotto:</strong>
+    </p>
+
+    <pre>MBVSFB CVTTJ IBDLFS</pre>
+
+    <button onclick="toggleHint()" style="margin-top: 10px;">
+      Hint
+    </button>
+
+    <p id="hint" style="display: none; margin-top: 12px;">
+      <em>Date a <strong>Cesare</strong> quel che è di <strong>Cesare</strong></em>
+    </p>
+
+    <input type="text" id="answer" placeholder="Inserisci la frase">
+    <button onclick="check()">Accedi</button>
+
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function toggleHint() {
+      const hint = document.getElementById("hint");
+      hint.style.display = hint.style.display === "none" ? "block" : "none";
+    }
+
+    function check() {
+      const input = document
+        .getElementById("answer")
+        .value
+        .trim()
+        .toUpperCase();
+
+      if (input === "LAUREA BUSSI HACKER") {
+        window.location.href = "final.html";
+      } else {
+        document.getElementById("result").innerText = "❌ Risposta errata";
+      }
+    }
+  </script>
+</body>
+</html>
