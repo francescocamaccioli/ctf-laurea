@@ -53,6 +53,7 @@ input {
   color: #d1d5db;
   border-radius: 4px;
   font-family: inherit;
+  box-sizing: border-box;
 }
 
 /* Bottone */
