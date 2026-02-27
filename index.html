@@ -3,60 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <title>CTF Laurea</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="container final">
-    <h1>🔐 CTF - the Bussi one</h1>
+
+    <h1>CTF</h1>
+    <h1>the Bussi one</h1>
 
     <p>
-      Benvenuto alla CTF dedicata alla mia Laurea Magistrale in Cybersecurity!
+      Benvenuto alla CTF dedicata alla mia Laurea!
     </p>
 
     <p>
-      Una CTF (Capture The Flag) è una sfida in cui i partecipanti devono risolvere problemi di sicurezza informatica per trovare  "flag" nascoste. In questo caso la sfida è semplice(o almeno si spera).
+      Una CTF (Capture The Flag) è una sfida in cui i partecipanti devono risolvere problemi di sicurezza informatica per trovare "flag" nascoste.
     </p>
 
-    <p>
-      <strong>Decifra la frase qui sotto:</strong>
-    </p>
+    <p><strong>Decifra la frase qui sotto:</strong></p>
 
-    <pre>MBVSFB CVTTJ IBDLFS</pre>
+    <pre style="font-size: 18px;"><strong>WJWB JM DJBVTDPMP</strong></pre>
 
-    <button onclick="toggleHint()" style="margin-top: 10px;">
-      Hint
-    </button>
-
-    <p id="hint" style="display: none; margin-top: 12px;">
+    <!-- HINT 1 -->
+    <button onclick="toggle('hint1')" style="margin-top:10px;">Aiutino?</button>
+    <p id="hint1" style="display:none; margin-top:8px;">
       <em>Date a <strong>Cesare</strong> quel che è di <strong>Cesare</strong></em>
     </p>
 
-    <input type="text" id="answer" placeholder="Inserisci la frase">
+    <!-- HINT 2 -->
+    <button onclick="toggle('hint2')" style="margin-top:10px;">Aiutino2?</button>
+    <p id="hint2" style="display:none; margin-top:8px;">
+      <em>La A è B, la B è C…</em>
+    </p>
+
+    <!-- ANSWER -->
+    <input type="text" id="answer" placeholder="Inserisci la frase" style="text-align:center;">
     <button onclick="check()">Accedi</button>
 
     <p id="result"></p>
+
   </div>
 
-  <script>
-    function toggleHint() {
-      const hint = document.getElementById("hint");
-      hint.style.display = hint.style.display === "none" ? "block" : "none";
-    }
+<script>
+function toggle(id){
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "none" ? "block" : "none";
+}
 
-    function check() {
-      const input = document
-        .getElementById("answer")
-        .value
-        .trim()
-        .toUpperCase();
+function check() {
+  const input = document
+    .getElementById("answer")
+    .value
+    .trim()
+    .toUpperCase();
 
-      if (input === "LAUREA BUSSI HACKER") {
-        window.location.href = "final.html";
-      } else {
-        document.getElementById("result").innerText = "❌ Risposta errata";
-      }
-    }
-  </script>
+  if (input === "VIVA IL CIAUSCOLO") {
+    window.location.href = "final.html";
+  } else {
+    document.getElementById("result").innerText = "❌ Risposta errata";
+  }
+}
+</script>
+
 </body>
 </html>

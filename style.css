@@ -1,8 +1,11 @@
-/* Base */
+
+* {
+  font-family: 'Courier new', monospace;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Courier New", monospace;
   background-color: #13181c;;
   color: #d1d5db;
   display: flex;
@@ -18,6 +21,8 @@ body {
   border-radius: 8px;
   padding: 32px;
   max-width: 720px;
+  margin-left: 10px;
+  margin-right: 10px;
   width: 95%;
   box-shadow: 0 0 20px rgba(0, 255, 170, 0.15);
 }
@@ -89,6 +94,11 @@ button:hover {
 
 .final {
   text-align: center;
+}
+
+.name {
+  color: #00ffaa;   /* stesso verde di h1 */
+  font-weight: bold;
 }
 
 @media (max-width: 480px) {

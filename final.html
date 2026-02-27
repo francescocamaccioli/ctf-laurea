@@ -2,37 +2,46 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>CTF Completata</title>
+
+  <style>
+    /* ensures the flag text is black even if CSS overrides it */
+    .flag{
+      color: black;
+      font-family: monospace;   /* keeps CTF-style look */
+      padding: 10px 16px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
   <div class="container final">
 
-    <img class="bina" src="bina.png" style="margin: 0 auto; max-width: 15%;" alt="bina">
-    <img class="bina" src="bina2.png" style="margin: 0 auto; max-width: 15%;" alt="bina">
-    <img class="bina" src="bina.png" style="margin: 0 auto; max-width: 15%;" alt="bina">
-    <img class="bina" src="bina2.png" style="margin: 0 auto; max-width: 15%;" alt="bina">
-    <img class="bina" src="bina.png" style="margin: 0 auto; max-width: 15%;" alt="bina">
+    <img class="bina" src="bina.png" style="margin:0 auto; max-width:15%;" alt="bina">
+    <img class="bina" src="bina2.png" style="margin:0 auto; max-width:15%;" alt="bina">
+    <img class="bina" src="bella.png" style="margin:0 auto; max-width:15%;">
+    <img class="bina" src="bina2.png" style="margin:0 auto; max-width:15%;" alt="bina">
+    <img class="bina" src="bina.png" style="margin:0 auto; max-width:15%;" alt="bina">
 
-    <h1> Access Granted </h1>
+    <h1>Access Granted</h1>
 
-    <p>
-      Complimenti, ora sei ufficialmente un hacker!
-    </p>
+    <p>Complimenti, ora sei ufficialmente un hacker!</p>
+    <p>Grazie per aver condiviso questo traguardo con me, spero tu ti sia divertito/a!</p>
 
-    <p>
-      Grazie per aver condiviso questo traguardo con me, spero tu ti sia divertito/a! 
-    </p>
-    <pre class="flag">FLAG{bomboniera_laurea_francesco_2026}</pre>
+    <!-- FLAG BUTTON -->
+    <button class="flag" onclick="window.location.href='secret.html'">
+      FLAG{bomboniera_laurea_francesco_2026}
+    </button>
 
-    <img class="bina" src="bina.png" style="margin: 0 auto; max-width: 15%;" alt="bina">
-    <img class="bina" src="bina2.png" style="margin: 0 auto; max-width: 15%;" alt="bina">
-    <img class="bina" src="bina.png" style="margin: 0 auto; max-width: 15%;" alt="bina">
-    <img class="bina" src="bina2.png" style="margin: 0 auto; max-width: 15%;" alt="bina">
-    <img class="bina" src="bina.png" style="margin: 0 auto; max-width: 15%;" alt="bina">
+    <img class="bina" src="bina.png" style="margin:0 auto; max-width:15%;" alt="bina">
+    <img class="bina" src="bina2.png" style="margin:0 auto; max-width:15%;" alt="bina">
+    <img class="bina" src="bella.png" style="margin:0 auto; max-width:15%;">
+    <img class="bina" src="bina2.png" style="margin:0 auto; max-width:15%;" alt="bina">
+    <img class="bina" src="bina.png" style="margin:0 auto; max-width:15%;" alt="bina">
+
   </div>
 </body>
-
 </html>
